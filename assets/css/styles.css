@@ -1,27 +1,27 @@
-/*===== GOOGLE FONTS =====*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  /*===== Colores =====*/
+
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  /*===== Fuente y tipografia =====*/
+  
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
-  /*===== Margenes =====*/
+
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
-  /*===== z index =====*/
+
   --z-back: -10;
   --z-fixed: 100;
 }
@@ -34,7 +34,7 @@
   }
 }
 
-/*===== BASE =====*/
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -70,7 +70,7 @@ img {
   display: block;
 }
 
-/*===== CLASS CSS ===== */
+
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -96,7 +96,6 @@ img {
   padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -109,12 +108,12 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  color:white;
   z-index: var(--z-fixed);
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  background-color: rgba(216, 220, 226, 0.8);;
+  box-shadow: 0 1px 4px rgba(217, 221, 226, 0.15);
 }
 
-/*===== NAV =====*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -173,12 +172,11 @@ img {
   background-color: var(--first-color);
 }
 
-/*=== Show menu ===*/
+/* Show menu*/
 .show {
   right: 0;
 }
 
-/*===== HOME =====*/
 .home {
   position: relative;
   row-gap: 5rem;
@@ -220,6 +218,62 @@ img {
   width: 360px;
 }
 
+/* projects */
+#order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--secondary-color);
+  width: 100%;
+  padding: 6rem 0;
+  align-items: center;
+}
+
+.order-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+  max-width: 1350px;
+}
+
+.order-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 32rem;
+  background-color: var(--background-boxes);
+  border: 1px solid #f5f5f5;
+  box-shadow: 0px 0px 30px #02203f;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.order-box img {
+  width: 100%;
+  height: auto;
+}
+
+.order-text {
+  padding-top:0.5rem;
+}
+
+.order-text h4 {
+  font-size: 1.6rem;
+  margin-bottom: 0.3em;
+}
+
+.order-text p {
+  font-size: 1.4rem;
+}
+
+
+
+
 /*BUTTONS*/
 .button {
   display: inline-block;
@@ -234,7 +288,7 @@ img {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== ABOUT =====*/
+/*  ABOUT */
 .about__container {
   row-gap: 2rem;
   text-align: center;
@@ -250,7 +304,7 @@ img {
   border-radius: 0.5rem;
 }
 
-/* ===== SKILLS =====*/
+/*  SKILLS */
 .skills__container {
   row-gap: 2rem;
   text-align: center;
@@ -258,9 +312,7 @@ img {
 .skills__subtitle {
   margin-bottom: var(--mb-2);
 }
-.skills__text {
-  margin-bottom: var(--mb-4);
-}
+
 .skills__data {
   display: flex;
   justify-content: space-between;
@@ -306,7 +358,7 @@ img {
   border-radius: 0.5rem;
 }
 
-/* ===== WORK =====*/
+/* ===== WORK ==*/
 .work__container {
   row-gap: 2rem;
 }
